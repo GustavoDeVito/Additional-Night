@@ -1,0 +1,12 @@
+{
+  "name": "Additional Night",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gustavo de Vito and Vinicius Rocha",
+  "license": "ISC"
+}
