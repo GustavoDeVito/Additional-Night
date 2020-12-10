@@ -64,10 +64,12 @@ class App {
 
   public deleteRow(id : string, num : number) {    
     try {
+      let scrollUp = window.scrollY;
       for (let index = 0; index < num; index++) {
         document.getElementById(id).lastElementChild.remove()
         if(id == "tableCalc") this.times.pop()
         if(this.times.length == 0) this.name = undefined
+        window.scrollBy(0, scrollUp - window.scrollY);
       }                  
     } catch (error) { this.getClear() }    
   }

@@ -55,12 +55,14 @@ var App = /** @class */ (function () {
     };
     App.prototype.deleteRow = function (id, num) {
         try {
+            var scrollUp = window.scrollY;
             for (var index = 0; index < num; index++) {
                 document.getElementById(id).lastElementChild.remove();
                 if (id == "tableCalc")
                     this.times.pop();
                 if (this.times.length == 0)
                     this.name = undefined;
+                window.scrollBy(0, scrollUp - window.scrollY);
             }
         }
         catch (error) {
