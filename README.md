@@ -3,4 +3,4 @@
 
 - Members: Gustavo de Vito and Vinicius Rocha.
 
-- Link: https://additional-night-project.netlify.app
+- Link: https://additional-night-project.netlify.app.
