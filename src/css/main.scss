@@ -238,3 +238,9 @@ footer.by {
     background-color: #ffffff;
     color: #000;
 }
+
+@media (max-width: 990px) {
+    body {
+        overflow: hidden !important;
+    } 
+}
