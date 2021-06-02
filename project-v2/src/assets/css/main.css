@@ -8,8 +8,8 @@ header#navbar a.navbar-brand {
 }
 
 header#navbar a.navbar-brand img {
-  width: 134px;
-  height: 38px;
+  width: 90px;
+  height: 90px;
 }
 
 header#navbar #navbarNav ul {
@@ -27,8 +27,8 @@ header#navbar #navbarNav li {
 }
 
 header#navbar #navbarNav li:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 header#navbar div.search {
@@ -88,7 +88,7 @@ header#navbar div.search span {
     margin: 0 !important;
   }
   header#navbar button.navbar-toggler {
-    margin-top: -40px;
+    margin-top: -80px;
     margin-bottom: 10px;
   }
   header#navbar #navbarNav {

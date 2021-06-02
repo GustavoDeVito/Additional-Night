@@ -2,9 +2,9 @@
   <header id="navbar">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a href="#home" class="navbar-brand">
-          <img src="" alt="Logo AltFlix" id="logo-img" />
-        </a>
+        <router-link to="/home" class="navbar-brand">
+          <img src="@/assets/image/logo.png" alt="Logo Adicional Noturno" />
+        </router-link>
       </div>
       <div class="container-fluid justify-content-end">
         <button
@@ -24,19 +24,13 @@
         >
           <ul class="navbar-nav d-flex justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" href="#home"
-                >Início</a
-              >
+              <router-link to="/home" class="navbar-brand">Início</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about"
-                >Sobre</a
-              >
+              <router-link to="/about" class="navbar-brand">Sobre</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#profile"
-                >Perfil</a
-              >
+              <!-- <router-link to="/profile" class="navbar-brand">Perfil</router-link> -->
             </li>
           </ul>
         </div>
@@ -44,9 +38,3 @@
     </nav>
   </header>
 </template>
-
-<script>
-    export default {
-        name: 'Navbar'
-    }
-</script>

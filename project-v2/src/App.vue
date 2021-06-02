@@ -1,19 +1,17 @@
 <template>
   <div>
-    <Navbar />
-    <HomeScreen />
+      <Navbar />
+    <router-view />
   </div>
 </template>
 
 <script>
-  import Navbar from './components/snippet/Navbar'
-  import HomeScreen from './components/screen/HomeScreen'
+  import Navbar from './components/base/Navbar.vue'
 
   export default {
-    name: 'App',
+    name: 'app',
     components: {
-      Navbar,
-      HomeScreen,
+      Navbar
     }
   }
 </script>
