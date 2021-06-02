@@ -3,7 +3,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <router-link to="/home" class="navbar-brand">
-          <img src="@/assets/image/logo.png" alt="Logo Adicional Noturno" />
+          <!-- <img src="@/assets/image/logo.png" alt="Logo Adicional Noturno" /> -->
+          Adicional Noturno
         </router-link>
       </div>
       <div class="container-fluid justify-content-end">
