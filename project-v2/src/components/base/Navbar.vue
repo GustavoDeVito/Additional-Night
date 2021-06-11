@@ -3,8 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <router-link to="/home" class="navbar-brand">
-          <!-- <img src="@/assets/image/logo.png" alt="Logo Adicional Noturno" /> -->
-          Adicional Noturno
+          <span>Adicional Noturno</span>
         </router-link>
       </div>
       <div class="container-fluid justify-content-end">
@@ -25,13 +24,13 @@
         >
           <ul class="navbar-nav d-flex justify-content-end">
             <li class="nav-item">
-              <router-link to="/home" class="navbar-brand">Início</router-link>
+              <router-link to="/home" class="navbar-brand">início</router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="navbar-brand">Sobre</router-link>
+              <router-link to="/about" class="navbar-brand">sobre nós</router-link>
             </li>
             <li class="nav-item">
-              <!-- <router-link to="/profile" class="navbar-brand">Perfil</router-link> -->
+              <!-- <router-link to="/profile" class="navbar-brand">perfil</router-link> -->
             </li>
           </ul>
         </div>
@@ -39,3 +38,9 @@
     </nav>
   </header>
 </template>
+
+<style scoped>
+  a.navbar-brand span {
+    font-size: clamp(1em, .5em + 2.5vw, 5em);
+  }
+</style>
