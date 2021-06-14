@@ -7,7 +7,7 @@
         Noturno da PROTON. <br
       /></span>
       <div class="explorer">
-        <router-link to="/about"
+        <router-link to="/calculator"
           ><button type="button" class="btn btn-outline-primary">
             Explorar
           </button></router-link
