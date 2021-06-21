@@ -155,16 +155,45 @@ div.home div.content div.explorer button {
 
 .label-before, div.calculator .form .field input:valid + label::before, div.calculator .form .field input:focus + label::before {
   line-height: 20px;
-  font-size: 12px;
   top: -10px;
   background: #fff;
+  border-radius: 3px;
   padding: 0 6px;
   left: 9px;
 }
 
+div.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+div.calculator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14213d;
+  background-size: cover;
+  background-position: top center;
+  z-index: -1;
+}
+
 div.calculator .form {
   width: 40%;
-  margin: 30px 10%;
+  margin: 30px;
 }
 
 div.calculator .form .field {
@@ -179,6 +208,7 @@ div.calculator .form .field label::before {
   left: 15px;
   line-height: 40px;
   font-size: 14px;
+  font-weight: 500;
   color: #777;
   -webkit-transition: 300ms all;
   transition: 300ms all;
@@ -198,7 +228,9 @@ div.calculator .form .field input {
 
 div.calculator .form .field input:focus {
   outline: 0;
-  border-color: blue;
+  border-color: #ccc;
+  -webkit-box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3);
+          box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.3);
 }
 
 div.calculator .form .field input:valid + label::before {
@@ -206,6 +238,43 @@ div.calculator .form .field input:valid + label::before {
 }
 
 div.calculator .form .field input:focus + label::before {
-  color: blue;
+  color: #632565;
+}
+
+div.calculator .form button.btn {
+  float: right;
+  margin-left: 5px;
+}
+
+div.calculator .form button.btn-clear {
+  background-color: transparent;
+  border: 1px solid #ffae00;
+  color: #ffae00;
+}
+
+div.calculator .form button.btn-clear:hover {
+  background-color: #ffae00;
+  color: #fff;
+}
+
+div.calculator .form button.btn-clear:focus {
+  -webkit-box-shadow: 0px 0px 0px 4px rgba(255, 174, 0, 0.3);
+          box-shadow: 0px 0px 0px 4px rgba(255, 174, 0, 0.3);
+}
+
+div.calculator .form button.btn-submit {
+  background-color: transparent;
+  border: 1px solid #3adb76;
+  color: #3adb76;
+}
+
+div.calculator .form button.btn-submit:hover {
+  background-color: #3adb76;
+  color: #fff;
+}
+
+div.calculator .form button.btn-submit:focus {
+  -webkit-box-shadow: 0px 0px 0px 4px rgba(58, 219, 118, 0.3);
+          box-shadow: 0px 0px 0px 4px rgba(58, 219, 118, 0.3);
 }
 /*# sourceMappingURL=main.css.map */

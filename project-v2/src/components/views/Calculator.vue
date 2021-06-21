@@ -1,5 +1,6 @@
 <template>
   <div class="calculator">
+
     <div class="form">
       <div class="mb-3 field">
         <input
@@ -23,7 +24,17 @@
         />
         <label for="time" title="Horas"></label>
       </div>
+      <div>
+        <button type="button" class="btn btn-submit">Enviar</button>
+        <button type="button" class="btn btn-clear">Limpar</button>
+      </div>
     </div>
+
+    <div class="table-calc">
+      
+    </div>
+
+    <div class="table-result"></div>
   </div>
 </template>
 
