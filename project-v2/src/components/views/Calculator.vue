@@ -1,5 +1,29 @@
 <template>
   <div class="calculator">
+    <div class="table-calc">
+      <table class="table table-light">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Horas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jacob</td>
+            <td>01:00</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>23:00</td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>22:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
     <div class="form">
       <div class="mb-3 field">
@@ -30,11 +54,13 @@
       </div>
     </div>
 
-    <div class="table-calc">
-      
+    <div class="table-result">
+      <div>
+        <h3>Resultados</h3>
+        <p>Jacob <i class="fas fa-plus"></i></p>
+        <p>Jorge <i class="fas fa-plus"></i></p>
+      </div>
     </div>
-
-    <div class="table-result"></div>
   </div>
 </template>
 
@@ -43,10 +69,10 @@ export default {
   data() {
     return {
       form: {
-        name: '',
-        time: '00:00',
-      }
-    }
-  }
-}
+        name: "",
+        time: "00:00",
+      },
+    };
+  },
+};
 </script>

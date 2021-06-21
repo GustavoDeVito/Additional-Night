@@ -169,13 +169,14 @@ div.calculator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 10%;
 }
 
 div.calculator::before {
@@ -276,5 +277,9 @@ div.calculator .form button.btn-submit:hover {
 div.calculator .form button.btn-submit:focus {
   -webkit-box-shadow: 0px 0px 0px 4px rgba(58, 219, 118, 0.3);
           box-shadow: 0px 0px 0px 4px rgba(58, 219, 118, 0.3);
+}
+
+div.calculator .table-result {
+  background-color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
