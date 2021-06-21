@@ -1,0 +1,52 @@
+.label-before {
+	line-height: 20px;
+	font-size: 12px;
+	top: -10px;
+	background: #fff;
+	padding: 0 6px;
+	left: 9px;
+}
+
+div.calculator {
+    .form {
+        width: 40%;
+        margin: 30px 10%;
+
+        .field {
+            position: relative;
+            margin-bottom: 15px;
+            label::before {
+                content: attr(title);
+                position: absolute;
+                top: 0;
+                left: 15px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #777;
+                transition: 300ms all;
+            }
+            input {
+            width: 100%;
+            line-height: 40px;
+            padding: 0 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #222;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+                &:focus {
+                    outline: 0;
+                    border-color: blue;
+                }
+                &:valid + label::before {
+                    @extend .label-before;
+                    content: attr(title);
+                }
+                &:focus + label::before {
+                    @extend .label-before;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
